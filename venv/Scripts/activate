@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="Z:\devCodeCamp\Day21\Code\Sorting_Arrays\sorting_algorithms\venv"
+VIRTUAL_ENV="Z:\devCodeCamp\Day21\Code\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
