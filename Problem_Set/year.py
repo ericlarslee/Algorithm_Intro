@@ -4,14 +4,20 @@ from months import Month
 def year_function():
     temp_year = Year()
     year = tuple(temp_year.month_list)
-    entry = int(input('which number month are you looking for a holiday in?'))
-    find_holiday(entry)
+
+    entry = int(input('which number month are you looking for a holiday in?')) - 1
+    if year[entry].holidays is not None:
+     print(f'{year[entry].name} has {year[entry].holiday_name} on {year[entry].holidays}')
+    else:
+     print('this month does not have holidays')
+
 
 
 class Year:
     def __init__(self):
         self.month_list = []
         self.make_month_list()
+
 
     def make_month_list(self):
         self.month_list.append(Month("January", 1, 31, None, None))
